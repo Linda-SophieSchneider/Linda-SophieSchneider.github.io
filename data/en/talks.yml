@@ -1,42 +1,13 @@
 talks:
   title: Talks
   items :
-    - title: "Foundations of Adaptor Signatures"
-      abstract: "Foundations of Adaptor Signatures is a work that was published at EUROCRYPT 2024."
+    - title: "Data-driven Modeling in Metrology"
+      abstract: "A Short Introduction, Current Developments and Future Perspectives for Data-driven Modeling."
       year: 2024
-      stage: "Brown Crypto Day"
-      location: "Providence, RI"
-    - title: "Measuring Conditional Anonymity - A Global Study"
-      abstract: "The conference talk for Measuring Conditional Anonymity - A Global Study, published at PETS'24"
+      stage: "VDI Expertenforum"
+      location: "Karlsruhe, Germany"
+    - title: "Advanced X-Ray Imaging Techniques with PYRO-NN"
+      abstract: "Conference Talk on WCNDT 2024 focusing on the Advantages of Differentiable Reconstruction."
       year: 2024
-      stage: "PETS"
-      location: "Bristol, UK"
-      slides: "main_PETS_VisualAnon.pdf"
-    - title: "Foundations of Adaptor Signatures"
-      abstract: "Foundations of Adaptor Signatures is a work that was published at EUROCRYPT 2024."
-      year: 2024
-      stage: "CIBE"
-      location: "Bertinoro, IT"
-      slides: "main_Bertinoro_Adaptor_Foundations.pdf"
-    - title: "Foundations of Adaptor Signatures"
-      abstract: "Foundations of Adaptor Signatures is a work that was published at EUROCRYPT 2024."
-      year: 2024
-      stage: "EUROCRYPT"
-      location: "Zürich, CH"
-      slides: "main_EC_Adaptor_Foundations.pdf"
-    - title: "Foundations of Adaptor Signatures"
-      abstract: "Foundations of Adaptor Signatures published at EUROCRYPT 2024."
-      year: 2024
-      stage: "Seminar Talk"
-      location: "Qiang Tang, University of Sydney, AU"
-      slides: "Found_Adaptors_Slides.pdf"
-    - title: "Practical Schnorr Threshold Signatures without the Algebraic Group Model"
-      abstract: "Practical Schnorr Threshold Signatures without the Algebraic Group Model is a work that was published at CRYPTO 2023."
-      year: 2023
-      stage: "CRYPTO"
-      location: "Santa Barbara, CA"
-      slides: "OLAF_Talk_Crypto.pdf"
-    - title: "How to Avoid Unfair Exchange: Adaptor Security Revisited"
-      year: 2023
-      stage: "IEEE S&P"
-      location: "San Francisco, CA"
+      stage: "WCNDT 2024"
+      location: "Seoul, South Korea"
