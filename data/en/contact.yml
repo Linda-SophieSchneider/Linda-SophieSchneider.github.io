@@ -4,9 +4,13 @@ contact:
   # Contact details
   last_name : Schneider
   first_name : Linda-Sophie 
+  address_1 : "Artilleriestr. 14"
+  address_2 : "91052 Erlangen"
   email : "linda-sophie.schneider@fau.de"
   email_anon : "linda-sophie.schneider@fau.de"
   homepage : "https://linda-sophieschneider.github.io"
+  ust_id : "TBD"
+  ust_id_description : "Tax ID"
   linkedin: "linkedin.com/in/lsschneiderde"
   scholar: "https://scholar.google.com/citations?user=B116MgwAAAAJ&hl=de"
 
