@@ -9,5 +9,5 @@ talks:
     - title: "Advanced X-Ray Imaging Techniques with PYRO-NN"
       abstract: "Conference Talk on WCNDT 2024 focusing on the Advantages of Differentiable Reconstruction."
       year: 2024
-      stage: "WCNDT 2024"
+      stage: "WCNDT"
       location: "Seoul, South Korea"
