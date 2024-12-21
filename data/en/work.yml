@@ -1,0 +1,21 @@
+work:
+  title : Work
+  items :
+    - name : Consultant and Software Developer
+      date : 12/2022 - present
+      topics : Cryptography, Privacy, IT-Forensics 
+
+    - name : University Research Assistant 
+      date : 09/2024 - present
+      topics : Privacy Enhancing Technologies
+      employer : TU Wien
+
+    - name : University Research Assistant 
+      date : 08/2022 - 08/2024 
+      topics : Applied Cryptography
+      employer : Friedrich-Alexander University Erlangen-Nürnberg
+
+    - name : Student Employee
+      date : 10/2017 - 07/2022
+      topics : Software Development
+      employer : Richard Wenzel GmbH & Co.KG

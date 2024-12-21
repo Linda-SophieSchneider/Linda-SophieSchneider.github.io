@@ -1,0 +1,48 @@
+################################# Default configuration ###################
+baseURL = "https://www.lsSchneider.github.io"
+title = "Linda-Sophie Schneider"
+theme = "PGTheme"
+# disable language
+disableLanguages = []
+timeout = "10m"
+disableKinds = ['rss']
+
+################### English Navigation ########################
+
+[[Languages.en.menu.main]]
+name = "CV"
+url = "/cv"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Publications"
+url = "/publications"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Talks"
+url = "/talks"
+weight = 3
+
+
+[[Languages.en.menu.main]]
+name = "Imprint"
+url = "imprint"
+weight = 11
+
+############################# Default Parameters ##########################
+[params]
+logo = "images/PGLogoHighContrast.svg"
+portrait = "images/portrait.jpg"
+author = "Linda-Sophie Schneider"
+title = "Linda-Sophie Schneider"
+ustid = ""
+
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+copyright = "Copyright &copy; 2024 Linda-Sophie Schneider"
