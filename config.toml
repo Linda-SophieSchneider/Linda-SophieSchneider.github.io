@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://www.lsSchneider.github.io"
+baseURL = "https://www.Linda-SophieSchneider.github.io" 
 title = "Linda-Sophie Schneider"
 theme = "PGTheme"
 # disable language
