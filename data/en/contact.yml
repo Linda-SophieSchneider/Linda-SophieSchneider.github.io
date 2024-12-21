@@ -2,16 +2,12 @@
 contact:
   title : Contact
   # Contact details
-  last_name : AS
-  first_name : Paul 
-  address_1 : "Knöllgasse 19"
-  address_2 : "1100 Wien"
-  email : "mail@paul-gerhart.de"
-  email_anon : "mail [at] paul-gerhart.de"
-  homepage : "https://paul-gerhart.de"
-  ust_id : "DE 358114582"
-  ust_id_description : "Tax ID"
-  linkedin: "https://www.linkedin.com/in/paul-gerhart"
-  scholar: "https://scholar.google.com/citations?hl=de&user=Zbv2SacAAAAJ"
-  dblp: "https://dblp.org/pid/350/5886.html"
+  last_name : Schneider
+  first_name : Linda-Sophie 
+  email : "linda-sophie.schneider@fau.de"
+  email_anon : "linda-sophie.schneider@fau.de"
+  homepage : "https://linda-sophieschneider.github.io"
+  linkedin: "linkedin.com/in/lsschneiderde"
+  scholar: "https://scholar.google.com/citations?user=B116MgwAAAAJ&hl=de"
+
 

@@ -1,21 +1,21 @@
 education:
   title: Education
   items:
-  - date : 08/2022 - present
-    institution : TU Wien, Friedrich-Alexander University Erlangen-Nürnberg 
+  - date : 08/2021 - present
+    institution : Friedrich-Alexander University Erlangen-Nürnberg 
     degree : Doctoral Student  
-    topics : Fair Protocols, Password-Hardening, Privacy
-    subject : Cryptography
-    supervisor : Dominique Schröder
+    topics : CT Trajectory Optimization, CT Reconstruction
+    subject : Pattern Recognition
+    supervisor : Andreas Maier
   
   - date : 10/2020 - 07/2022
     institution : Friedrich-Alexander University Erlangen-Nürnberg
-    topics : Cryptography, Privacy, Cyber Security and IT-Forensics
+    topics : Linear and nonlinear Optimization, Deep Learning
     degree : Master of Science
-    subject : Computer Science
+    subject : Mathematics
 
   - date : 10/2017 - 09/2020
-    institution : University of Bonn
-    topics : Algebraic Topology
+    institution : Friedrich-Alexander University Erlangen-Nürnberg
+    topics : Linear Optimization
     degree : Bachelor of Science
-    subject : Mathematics
+    subject : Mathematics and Economics

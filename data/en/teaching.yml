@@ -5,26 +5,26 @@ lectures:
   title: Teaching Activities
   items :
     - subject : Reproduce Research Results
-      kind: Project Semino
+      kind: Project Seminar
       semester : Winter term 24/25
       position : Teaching assistant
 
 
 students:
-  title : Supervised Students
+  title : Supervised Thesis and Projects
   items:
-    - date: 2024
+    - date: 2025
       degree: Master Thesis
       topic: "Optimization of Image Reconstruction in Dedicated Breast CT with Circle-Spiral Trajectory"
-    - date: 2024
-      degree: Master Thesis
-      topic: "Diffusion Model-Based 3D CT Reconstruction for Arbitrary Trajectories"
-    - date: 2024
+    - date: 2025
       degree: Master Thesis
       topic: "Design and Dataset Generation of Scanning Objects for CT Trajectory Optimization"
     - date: 2024
       degree: Master Thesis
       topic: "Image2TikZ: Neural Network-Based TikZ Code Generation"
+    - date: 2024
+      degree: Master Thesis
+      topic: "Diffusion Model-Based 3D CT Reconstruction for Arbitrary Trajectories"
     - date: 2024
       degree: Project
       topic: "Defect Detection Probability as a Metric for CT Image Quality Assessment"
@@ -40,7 +40,10 @@ students:
     - date: 2024
       degree: Bachelor Thesis
       topic: "Developing and Evaluating Image Similarity Metrics for Enhanced Classification Performance in 2D Datasets"
-    - date: 2023
+    - date: 2024
+      degree: Master Thesis
+      topic: "Robot Movement Planning for Obstacle Avoidance using Reinforcement Learning"
+    - date: 2024
       degree: Project
       topic: "Detectability Index Reimplementation for CT Images Using PyTorch"
     - date: 2024
@@ -49,9 +52,6 @@ students:
     - date: 2023
       degree: Master Thesis
       topic: "Deep Learning Computed Tomography based on the Defrise and Clack Algorithm for Specific CBCT Orbits"
-    - date: 2023
-      degree: Master Thesis
-      topic: "Robot Movement Planning for Obstacle Avoidance using Reinforcement Learning"
     - date: 2023
       degree: Master Thesis
       topic: "Sinogram Analysis Using Attention U-Net: A Methodological Approach to Defect Detection and Localization in Parallel Beam Computed Tomography"
@@ -67,6 +67,6 @@ students:
     - date: 2023
       degree: Project
       topic: "Synthetic Projection Generation with Angle Conditioning"
-    - date: 2023
+    - date: 2022
       degree: Bachelor Thesis
       topic: "How to Learn and Use the Detectability Index Efficiently for CT Trajectory Optimization"
