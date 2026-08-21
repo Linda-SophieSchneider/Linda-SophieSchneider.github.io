@@ -4,6 +4,16 @@ teaching:
 lectures:
   title: Teaching Activities
   items :
+    - subject : Pattern Recognition
+      kind: Lecture
+      semester : Winter term 25/26
+      position : Teaching assistant
+
+    - subject : Introduction to Machine Learning
+      kind: Lecture
+      semester : Summer term 25
+      position : Teaching assistant
+
     - subject : Reproduce Research Results
       kind: Project Seminar
       semester : Winter term 24/25
@@ -13,6 +23,27 @@ lectures:
 students:
   title : Supervised Thesis and Projects
   items:
+    - date: 2026
+      degree: Master Thesis
+      topic: "Agentic Workflow Automatisation"
+    - date: 2026
+      degree: Bachelor Thesis
+      topic: "Deep Learning-Based Analysis of Thermographic Mold Images for Quality Prediction in Aluminum Die Casting"
+    - date: 2026
+      degree: Project
+      topic: "Deep Learning-Based Classification and Explainability of Cytomegalovirus Encephalitis in Longitudinal MRI Data"
+    - date: 2026
+      degree: Seminar
+      topic: "A Comparative Analysis of Deep Learning Models for Text-to-CAD Generation"
+    - date: 2025
+      degree: Master Thesis
+      topic: "Contrastive Learning of 3D Objects via Patch-Level Point Cloud Encoding for Similarity Matching"
+    - date: 2025
+      degree: Master Thesis
+      topic: "FVR-ADNeRF: Attention-Driven NeRFs for Few-View Reconstruction to enable CT Trajectory Optimization"
+    - date: 2025
+      degree: Project
+      topic: "Generalization of Self-Supervised Vision Models in Image Retrieval"
     - date: 2025
       degree: Master Thesis
       topic: "Optimization of Image Reconstruction in Dedicated Breast CT with Circle-Spiral Trajectory"
