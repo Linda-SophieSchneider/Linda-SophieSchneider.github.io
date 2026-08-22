@@ -21,6 +21,12 @@
                 Researcher &middot; <a href="https://lme.tf.fau.de" target="_blank">Pattern Recognition Lab</a>, <a href="https://www.fau.eu" target="_blank">FAU Erlangen-Nürnberg</a> <br>
                 <span class="tag-pill">UnLost — ERC Synergy Grant</span>
             </p>
+            <ul class="bio-bullets pt-1">
+                <li>Ph.D. candidate, Pattern Recognition Lab, FAU Erlangen-Nürnberg</li>
+                <li>Differentiable CT reconstruction &amp; CT trajectory optimization</li>
+                <li>Co-developer of <strong>DiffCT-MLX</strong> (CUDA/PyTorch &amp; Metal/MLX)</li>
+                <li>Part of <strong>UnLost</strong>: reconstruction &amp; ink detection for the Herculaneum papyri</li>
+            </ul>
             <p class="pt-2">
                 I studied mathematics in Erlangen and am currently pursuing my Ph.D.
                 in computer science at the <a href="https://www.fau.eu" target="_blank">Friedrich-Alexander-Universität Erlangen-Nürnberg</a>,
@@ -37,8 +43,7 @@
                 palimpsests, and on building an end-to-end pipeline that runs from segmentation to ink detection.
             </p>
             <p>
-                Outside of work, I'm engaged to <a href="https://www.julian-thomas-thomas.de/about/" target="_blank">Julian Thomas</a>,
-                who is also a PhD student at FAU, working on applied cryptography.
+                My fiancé does <a href="https://www.julian-thomas-thomas.de/about/" target="_blank">cryptography</a>!
             </p>
             <p class="more-height pt-2">
                 Email: {{.email_anon}}
@@ -51,6 +56,34 @@
             {{ end }}
         </div>
     </div>
+  </div>
+
+  <div class="mx-auto pt-4" style="max-width: 900px;">
+    {{ $data := index site.Data site.Language.Lang }}
+    {{ with $data.publications.publications }}
+    <h2>Recent First-Author Publications</h2>
+    <div class="pub-list">
+        {{ $shown := 0 }}
+        {{ range .items }}
+        {{ if and (lt $shown 3) (or (hasPrefix .authors "L.-S. Schneider") (hasPrefix .authors "L. Schneider")) }}
+        {{ $shown = (add $shown 1) }}
+        <div class="pub-row">
+            <div class="pub-year">{{ .year }}</div>
+            <div class="pub-content">
+                {{ if .pdf }}
+                <a href="{{ .pdf }}" target="_blank">{{ .title }}</a>
+                {{ else }}
+                {{ .title }}
+                {{ end }}
+                {{ if eq .status "submitted" }}<span class="pill-status pill-submitted">Under review</span>{{ end }}
+                <div class="pub-venue"><b>{{ .published }}</b></div>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+    <p class="pt-2"><a href="/publications">See all publications &rarr;</a></p>
+    {{ end }}
   </div>
 </div>
 
