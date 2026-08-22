@@ -23,7 +23,7 @@ publications:
       published: "ICDAR 2026"
       has_info: true
       abstract: "Compares lightweight model architectures for translating text embedded in document images, evaluating the trade-off between model size and translation quality."
-      pdf: "/papers/lightweight-models-document-image-translation-icdar2026.pdf"
+      pdf: "https://doi.org/10.1007/978-3-032-36033-5_9"
 
     - title: "Incremental Learning for Classifying Document Types Based on Content and Layout"
       year: 2026

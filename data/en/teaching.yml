@@ -48,9 +48,9 @@ students:
       expected: "Expected Nov 2026"
       description: "Developing an agent-based pipeline that combines classification and segmentation models to automatically generate and evaluate radiology reports from CT data."
     - degree: Master Thesis
-      topic: "Continental — Tire Patterns"
+      topic: "Conditional Generation of Tire Patterns using Generative AI"
       expected: "Expected Nov 2026"
-      description: "Using generative diffusion models, fine-tuned on tire-specific imagery, to automatically propose tire tread patterns that meet target performance characteristics."
+      description: "Fine-tunes a latent diffusion model with DreamBooth on tire tread imagery and guides generation with tire-performance evaluation functions, to automatically propose tread patterns meeting target performance characteristics."
     - degree: Bachelor Thesis
       topic: "Solving the Puppet Cube V1 with A* Search and Neural Networks"
       expected: "Expected Oct 2026"
