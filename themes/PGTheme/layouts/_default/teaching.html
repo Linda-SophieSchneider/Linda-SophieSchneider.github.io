@@ -1,0 +1,81 @@
+{{ define "content" }}
+{{ $data := index site.Data site.Language.Lang }}
+
+<div class="container pt-2 pt-3">
+    <div class="row">
+
+        {{ with $data.teaching.lectures }}
+        <h2 class="pt-4">{{.title}}</h2>
+
+        <!-- Wrapper div for horizontal scrolling -->
+        <div style="overflow-x: auto;">
+            <table style="border-collapse: separate; border-spacing: 0 10px;">
+                {{ range .items }}
+                <tr>
+                    <td style="vertical-align: top; padding-right:15px;">{{ .semester }}</td>
+                    <td style="padding-left: 15px;">
+                        <i>{{.subject}} </i><br>
+                        {{.position}} <br>
+                        {{.kind}}
+                    </td>
+                </tr>
+                {{ end }}
+            </table>
+        </div>
+        {{ end }}
+
+        {{ with $data.teaching.students }}
+        <h2 class="pt-4">{{.title}}</h2>
+
+        {{ if .running }}
+        <h3 class="pt-2">{{ .running_title | default "Current Theses & Projects" }}</h3>
+        <div class="student-list">
+            {{ range .running }}
+            <div class="student-row">
+                <div class="student-date"></div>
+                <div>
+                    {{.topic}} <span class="pill-status pill-running">running</span><br>
+                    {{.degree}}{{ if .expected }} &middot; {{ .expected }}{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <h3 class="pt-3">{{ .completed_title | default "Completed Theses & Projects" }}</h3>
+        <div class="student-list">
+            {{ range .items }}
+            <div class="student-row">
+                <div class="student-date">{{ .date }}</div>
+                <div>
+                    {{.topic}} <br>
+                    {{.degree}}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with $data.lectures.lectures }}
+        <h2 class="pt-4">{{ .title }}</h2>
+        {{ if .intro }}<p>{{ .intro }}</p>{{ end }}
+
+        {{ if .courses }}
+        {{ range .courses }}
+        <h3 class="pt-3">{{ .name }}</h3>
+        <p class="text-muted">{{ .semester }}</p>
+        <ul>
+            {{ range .materials }}
+            <li><a href="{{ .file }}" target="_blank">{{ .title }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+        {{ else }}
+        <p><em>Materials coming soon.</em></p>
+        {{ end }}
+        {{ end }}
+
+    </div>
+</div>
+
+{{ end }}

@@ -10,8 +10,8 @@ disableKinds = ['rss']
 ################### English Navigation ########################
 
 [[Languages.en.menu.main]]
-name = "CV"
-url = "/cv"
+name = "About me"
+url = "/"
 weight = 1
 
 [[Languages.en.menu.main]]
@@ -25,9 +25,14 @@ url = "/talks"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Lectures"
-url = "/lectures"
+name = "Teaching"
+url = "/teaching"
 weight = 4
+
+[[Languages.en.menu.main]]
+name = "CV"
+url = "/cv"
+weight = 5
 
 
 [[Languages.en.menu.main]]
