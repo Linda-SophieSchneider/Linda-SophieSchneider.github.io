@@ -42,104 +42,139 @@ students:
     - degree: Master Thesis
       topic: "Cross-Domain Ontology-driven Agentic RAG over Gigantic Collection of German Historic Text"
       expected: "Expected Dec 2026"
+      description: "Building an agentic retrieval system over a large collection of German historical texts, combining a cross-domain ontology with graph- and hierarchy-aware retrieval to answer questions spanning literature, mythology, and the history of science."
     - degree: Master Thesis
       topic: "Agentic Radiology Report Generation"
       expected: "Expected Nov 2026"
+      description: "Developing an agent-based pipeline that combines classification and segmentation models to automatically generate and evaluate radiology reports from CT data."
     - degree: Master Thesis
       topic: "Continental — Tire Patterns"
       expected: "Expected Nov 2026"
+      description: "Using generative diffusion models, fine-tuned on tire-specific imagery, to automatically propose tire tread patterns that meet target performance characteristics."
     - degree: Bachelor Thesis
       topic: "Solving the Puppet Cube V1 with A* Search and Neural Networks"
       expected: "Expected Oct 2026"
+      description: "Combining classical A* search with reinforcement learning to solve the Puppet Cube, a generalization of Rubik's-cube-style puzzles."
     - degree: Bachelor Thesis
       topic: "Automated Calibration of the Scan Trajectory in Dedicated Breast CT with Circle-Spiral Trajectory"
       expected: "Expected Sep 2026"
+      description: "Automating the geometric calibration of a circle-spiral scan trajectory for a dedicated breast-CT system."
     - degree: Master Thesis
       topic: "Self-Supervised 3D Masked Autoencoders for Volumetric CT Representation Learning"
+      description: "Extending masked-autoencoder pretraining from 2D to volumetric CT, studying cross-attention decoding and learnable register tokens for representation quality and efficiency."
     - degree: Master Thesis
       topic: "Sampling-Aware Regularisation for Algebraic Reconstruction with Detector Gaps"
+      description: "Developing regularization strategies for algebraic CT reconstruction that account for gaps in detector sampling."
     - degree: Master Thesis
       topic: "Noise Student-Teacher Training for Automated Labeling of Herculaneum Ink Detection Data"
+      description: "Using noisy student-teacher training to automatically generate ink-detection labels for the Herculaneum papyri scans, as part of the UnLost project."
   completed_title: "Completed Theses & Projects"
   items:
     - date: 2026
       degree: Project
       topic: "Differentiable Compressed-Sensing ART"
+      description: "Combined a differentiable ASD-POCS solver with a learned CT operator for compressed-sensing-style algebraic reconstruction."
     - date: 2026
       degree: Master Thesis
       topic: "Agentic Workflow Automatisation"
+      description: "Designed and evaluated an LLM-based agentic workflow that automates large parts of German public-tender processing, from search and document analysis to cost calculation and bid submission."
     - date: 2026
       degree: Bachelor Thesis
       topic: "Deep Learning-Based Analysis of Thermographic Mold Images for Quality Prediction in Aluminum Die Casting"
+      description: "Trained CNN-based models on thermographic mold images to predict casting quality in aluminum die casting, using explainable-AI methods to highlight the most informative regions, in cooperation with an industry partner."
     - date: 2026
       degree: Project
       topic: "Deep Learning-Based Classification and Explainability of Cytomegalovirus Encephalitis in Longitudinal MRI Data"
+      description: "Developed deep-learning models to classify cytomegalovirus encephalitis from longitudinal MRI scans, combined with explainability methods to highlight the anatomical regions driving each decision."
     - date: 2026
       degree: Seminar
       topic: "A Comparative Analysis of Deep Learning Models for Text-to-CAD Generation"
+      description: "Compared two deep-learning approaches for generating 3D CAD models directly from text descriptions, showing a substantial reduction in invalid geometries with the newer transformer-based method."
     - date: 2025
       degree: Master Thesis
       topic: "Contrastive Learning of 3D Objects via Patch-Level Point Cloud Encoding for Similarity Matching"
+      description: "Developed a patch-level contrastive learning framework for matching similar 3D objects from point-cloud data."
     - date: 2025
       degree: Master Thesis
       topic: "FVR-ADNeRF: Attention-Driven NeRFs for Few-View Reconstruction to enable CT Trajectory Optimization"
+      description: "Explored attention-driven neural radiance fields for reconstructing CT volumes from only a few projection views, as a building block for trajectory optimization."
     - date: 2025
       degree: Project
       topic: "Generalization of Self-Supervised Vision Models in Image Retrieval"
+      description: "Studied how well self-supervised vision models generalize across very different image domains for retrieval tasks."
     - date: 2025
       degree: Master Thesis
       topic: "Optimization of Image Reconstruction in Dedicated Breast CT with Circle-Spiral Trajectory"
+      description: "Improved image reconstruction quality for a dedicated breast-CT system using a circle-spiral scan trajectory."
     - date: 2025
       degree: Master Thesis
       topic: "Design and Dataset Generation of Scanning Objects for CT Trajectory Optimization"
+      description: "Built an automated, parametric pipeline for designing 3D test objects and generating a benchmark dataset for evaluating CT trajectory-optimization algorithms."
     - date: 2024
       degree: Master Thesis
       topic: "Image2TikZ: Neural Network-Based TikZ Code Generation"
+      description: "Built a two-stage neural pipeline that converts diagram images into TikZ code, progressing from simple screenshots to hand-drawn sketches."
     - date: 2024
       degree: Master Thesis
       topic: "Diffusion Model-Based 3D CT Reconstruction for Arbitrary Trajectories"
+      description: "Used diffusion models to denoise low-quality CT reconstructions from limited-view data acquired on arbitrary scanning trajectories."
     - date: 2024
       degree: Project
       topic: "Defect Detection Probability as a Metric for CT Image Quality Assessment"
+      description: "Used the detection probability of a learned defect detector as a task-based image-quality metric for CT."
     - date: 2024
       degree: Project
       topic: "Automated ONNX2TikZ: Generating LaTeX-TikZ Diagrams of Neural Networks"
+      description: "Automated the conversion of ONNX neural-network models into TikZ diagrams for use in papers and presentations."
     - date: 2024
       degree: Master Thesis
       topic: "Feature Extraction and Dimensionality Reduction Techniques for Assessing Similarity in Large-Scale 3D CAD Datasets"
+      description: "Compared feature-extraction and dimensionality-reduction techniques for assessing similarity across large collections of 3D CAD models."
     - date: 2023
       degree: Project
       topic: "A Comparative Analysis of Loss Functions in Deep Learning-Based Inverse Problems"
+      description: "Investigated how different loss functions affect the quality of deep-learning-based denoising and artifact reduction in low-dose CT reconstruction."
     - date: 2024
       degree: Bachelor Thesis
       topic: "Developing and Evaluating Image Similarity Metrics for Enhanced Classification Performance in 2D Datasets"
+      description: "Developed new image-similarity metrics, combined with active learning, to improve classification performance on 2D image datasets."
     - date: 2024
       degree: Master Thesis
       topic: "Robot Movement Planning for Obstacle Avoidance using Reinforcement Learning"
+      description: "Combined the artificial-potential-field method with reinforcement learning for collision-free robot-arm motion planning. This work led to a publication in Scientific Reports."
     - date: 2024
       degree: Project
       topic: "Detectability Index Reimplementation for CT Images Using PyTorch"
+      description: "Reimplemented the detectability-index method for evaluating individual CT projections in PyTorch, with a focus on performance and maintainability."
     - date: 2024
       degree: Master Thesis
       topic: "Scamming Scammers Using Large Language Models"
+      description: "Studied how large language models can be used to automatically engage and waste the time of email scammers, including how to estimate the resulting economic cost to the scammers."
     - date: 2023
       degree: Master Thesis
       topic: "Deep Learning Computed Tomography based on the Defrise and Clack Algorithm for Specific CBCT Orbits"
+      description: "Investigated learned, trajectory-specific filters for FBP-style reconstruction on non-circular CBCT orbits. This work laid the groundwork for a series of follow-up publications on shift-variant FBP reconstruction."
     - date: 2023
       degree: Master Thesis
       topic: "Sinogram Analysis Using Attention U-Net: A Methodological Approach to Defect Detection and Localization in Parallel Beam Computed Tomography"
+      description: "Developed a three-stage attention U-Net pipeline that detects and localizes defects directly in the sinogram domain, without reconstructing an image first. This work led to a publication at the CT Meeting 2024."
     - date: 2023
       degree: Project
       topic: "Learning Reconstruction Filters for CBCT Geometry"
+      description: "Explored iterative and learned-filter approaches for CBCT reconstruction, including a data-driven FDK filter that generalizes the classical Ram-Lak filter."
     - date: 2023
       degree: Master Thesis
       topic: "Application of Projection-Based Metrics to the Optimization of Arbitrary CT Scanning Trajectory"
+      description: "Compared a range of projection-based metrics for optimizing CT scanning trajectories and used a learned sequence model to search for improved trajectories. This work led to a publication at the CT Meeting 2024."
     - date: 2023
       degree: Project
       topic: "Tackling Traveling Salesman Problem with Graph Neural Network and Reinforcement Learning"
+      description: "Solved the Traveling Salesman Problem using graph neural networks trained with reinforcement learning, comparing actor-critic and double-Q-learning training."
     - date: 2023
       degree: Project
       topic: "Synthetic Projection Generation with Angle Conditioning"
+      description: "Synthesized CT projections at previously unseen viewing angles from a handful of known-angle input projections, aiming to reduce radiation exposure."
     - date: 2022
       degree: Bachelor Thesis
       topic: "How to Learn and Use the Detectability Index Efficiently for CT Trajectory Optimization"
+      description: "Studied how to learn and use the detectability index efficiently to guide CT trajectory optimization."

@@ -36,6 +36,7 @@
                 <div>
                     {{.topic}} <span class="pill-status pill-running">running</span><br>
                     {{.degree}}{{ if .expected }} &middot; {{ .expected }}{{ end }}
+                    {{ if .description }}<p class="thesis-desc">{{ .description }}</p>{{ end }}
                 </div>
             </div>
             {{ end }}
@@ -50,6 +51,7 @@
                 <div>
                     {{.topic}} <br>
                     {{.degree}}
+                    {{ if .description }}<p class="thesis-desc">{{ .description }}</p>{{ end }}
                 </div>
             </div>
             {{ end }}
