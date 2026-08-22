@@ -101,6 +101,17 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
+/* Compact "at a glance" bio summary */
+.bio-bullets {
+  margin: 0.5em 0 0;
+  padding-left: 1.2em;
+  font-size: 0.95em;
+}
+
+.bio-bullets li {
+  margin-bottom: 0.2em;
+}
+
 /* Social icon links (About-me style) */
 .social-icons a {
   display: inline-flex;
