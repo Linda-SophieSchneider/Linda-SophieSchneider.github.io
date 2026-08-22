@@ -4,28 +4,31 @@
 {{ with $data.publications.publications }}
 <h2 class="pt-4">{{.title}}</h2>
 
-<!-- Wrapper div for horizontal scrolling -->
-<div style="overflow-x: auto;">
-    <table style="border-collapse: separate; border-spacing: 0 10px;">
-        {{ range .items }}
-        <tr>
-            <td style="vertical-align: top; padding-right:15px;">
-                {{ if ne .year $currentYear }}
-                {{ $currentYear = .year }}
-                {{ .year }}
-                {{ end }}
-            </td>
-            <td style="padding-left: 15px;">
-                {{ if .pdf }}
-                <a href="{{ .pdf }}" class="" target="_blank">{{ .title }} </a>
-                {{ else }}
-                {{ .title }}
-                {{ end }}<br>
-                {{ .authors }} <br>
-                <b>{{ .published }} {{if .pdf }} {{.year}}{{end}} </b>
-            </td>
-        </tr>
-        {{ end }}
-    </table>
+<div class="pub-list">
+    {{ range $i, $item := .items }}
+    {{ $showYear := ne $item.year $currentYear }}
+    {{ $currentYear = $item.year }}
+    {{ $collapseID := printf "pub-collapse-%d" $i }}
+    <div class="pub-row">
+        <div class="pub-year">{{ if $showYear }}{{ $item.year }}{{ end }}</div>
+        <div class="pub-content">
+            <button class="pub-toggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#{{ $collapseID }}" aria-expanded="false" aria-controls="{{ $collapseID }}">
+                <span class="pub-chevron">▸</span> {{ $item.title }}
+            </button>
+            {{ if eq $item.status "submitted" }}<span class="pill-status pill-submitted">Under review</span>{{ end }}
+            <div class="pub-authors">{{ $item.authors }}</div>
+            <div class="pub-venue"><b>{{ $item.published }}</b></div>
+            {{ if or $item.abstract $item.pdf }}
+            <div class="collapse pub-details" id="{{ $collapseID }}">
+                <div class="pub-details-inner">
+                    {{ if $item.abstract }}<p>{{ $item.abstract }}</p>{{ end }}
+                    {{ if $item.pdf }}<a href="{{ $item.pdf }}" target="_blank">Full paper &rarr;</a>{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
 </div>
 {{ end }}

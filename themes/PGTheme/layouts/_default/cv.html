@@ -66,20 +66,32 @@
         {{ with $data.teaching.students }}
         <h2 class="pt-4">{{.title}}</h2>
 
-        <!-- Wrapper div for horizontal scrolling -->
-        <div style="overflow-x: auto;">
-            <table style="border-collapse: separate; border-spacing: 0 10px;">
-                {{ range .items }}
-                <tr>
-                    <td style="vertical-align: top; padding-right:15px;">{{ .date }}</td>
-                    <td style="padding-left: 15px;">
-                        {{.topic}} <br>
-                        {{.degree}}
+        {{ if .running }}
+        <h3 class="pt-2">{{ .running_title | default "Current Theses & Projects" }}</h3>
+        <div class="student-list">
+            {{ range .running }}
+            <div class="student-row">
+                <div class="student-date"></div>
+                <div>
+                    {{.topic}} <span class="pill-status pill-running">running</span><br>
+                    {{.degree}}{{ if .expected }} &middot; {{ .expected }}{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
 
-                    </td>
-                </tr>
-                {{ end }}
-            </table>
+        <h3 class="pt-3">{{ .completed_title | default "Completed Theses & Projects" }}</h3>
+        <div class="student-list">
+            {{ range .items }}
+            <div class="student-row">
+                <div class="student-date">{{ .date }}</div>
+                <div>
+                    {{.topic}} <br>
+                    {{.degree}}
+                </div>
+            </div>
+            {{ end }}
         </div>
         {{ end }}
 

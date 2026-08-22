@@ -37,7 +37,34 @@ lectures:
 
 students:
   title : Supervised Thesis and Projects
+  running_title: "Current Theses & Projects"
+  running:
+    - degree: Master Thesis
+      topic: "Cross-Domain Ontology-driven Agentic RAG over Gigantic Collection of German Historic Text"
+      expected: "Expected Dec 2026"
+    - degree: Master Thesis
+      topic: "Agentic Radiology Report Generation"
+      expected: "Expected Nov 2026"
+    - degree: Master Thesis
+      topic: "Continental — Tire Patterns"
+      expected: "Expected Nov 2026"
+    - degree: Bachelor Thesis
+      topic: "Solving the Puppet Cube V1 with A* Search and Neural Networks"
+      expected: "Expected Oct 2026"
+    - degree: Bachelor Thesis
+      topic: "Automated Calibration of the Scan Trajectory in Dedicated Breast CT with Circle-Spiral Trajectory"
+      expected: "Expected Sep 2026"
+    - degree: Master Thesis
+      topic: "Self-Supervised 3D Masked Autoencoders for Volumetric CT Representation Learning"
+    - degree: Master Thesis
+      topic: "Sampling-Aware Regularisation for Algebraic Reconstruction with Detector Gaps"
+    - degree: Master Thesis
+      topic: "Noise Student-Teacher Training for Automated Labeling of Herculaneum Ink Detection Data"
+  completed_title: "Completed Theses & Projects"
   items:
+    - date: 2026
+      degree: Project
+      topic: "Differentiable Compressed-Sensing ART"
     - date: 2026
       degree: Master Thesis
       topic: "Agentic Workflow Automatisation"

@@ -45,6 +45,7 @@ publications:
       year: 2026
       authors: "L.-S. Schneider, A. Maier"
       published: "Submitted to Inverse Problems"
+      status: submitted
       has_info: true
       abstract: "Proposes a differentiable, graded relaxation of Tuy's completeness condition, together with an Effective Spatial Resolution diagnostic, for projection selection in region-of-interest cone-beam CT, and shows via NP-completeness analysis that a submodular greedy algorithm with proven approximation guarantees nearly matches an exact MILP solution."
       pdf: "https://arxiv.org/abs/2605.24023"
@@ -93,6 +94,7 @@ publications:
       year: 2026
       authors: "Y. Sun, L.-S. Schneider, M. Gu, C. Ye, D. Liu, Z. Yang, F. Wu, S. Bayer, A. Maier"
       published: "Submitted to Medical Physics"
+      status: submitted
       has_info: true
       abstract: "Proposes a test-time, physics-guided manifold optimization approach to blindly compensate for motion artifacts in single-scan cone-beam CT without requiring external motion sensors or paired training data."
 
@@ -100,6 +102,7 @@ publications:
       year: 2026
       authors: "Y. Sun, L.-S. Schneider, S. Mei, C. Ye, M. Gu, F. Wagner, S. Bayer, A. Maier"
       published: "Submitted to International Journal of Computer Assisted Radiology and Surgery"
+      status: submitted
       has_info: true
       abstract: "Introduces a motion-aware joint bilateral filter guided by deformable attention to denoise 4D CT data in a zero-shot setting while accounting for inter-phase motion."
 
@@ -107,6 +110,7 @@ publications:
       year: 2026
       authors: "Y. Sun, L.-S. Schneider, M. Gu, S. Mei, C. Ye, L. Cai, J. Wang, G. Hu, D. Liu, Z. Yang, S. Wittl, A. Maier, F. Wu, L. Song"
       published: "Submitted to SPIE"
+      status: submitted
       has_info: true
       abstract: "Proposes Noise2Flow, a single-image denoising method that learns a conditional mean denoising flow from weak anchor couplings instead of paired clean/noisy training data."
 

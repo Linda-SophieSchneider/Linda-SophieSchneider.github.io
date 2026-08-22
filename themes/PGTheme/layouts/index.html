@@ -22,16 +22,27 @@
                 <span class="tag-pill">UnLost — ERC Synergy Grant</span>
             </p>
             <p class="pt-2">
-                I work on computed tomography (CT) reconstruction and CT trajectory optimization at the
-                Pattern Recognition Lab, under the supervision of <a href="https://lme.tf.fau.de/person/maier/" target="_blank">Andreas Maier</a>.
-                Since the beginning of 2026 I have also been part of <strong>UnLost</strong>, an ERC Synergy Grant
-                project dedicated to making the Herculaneum papyri legible again, where I focus on differentiable
-                pipelines that connect CT reconstruction directly with ink detection.
+                {{.first_name}} {{.last_name}} studied mathematics in Erlangen and is currently pursuing her Ph.D.
+                in computer science at the <a href="https://www.fau.eu" target="_blank">Friedrich-Alexander-Universität Erlangen-Nürnberg</a>,
+                at the <a href="https://lme.tf.fau.de" target="_blank">Pattern Recognition Lab</a>. Her research
+                sits at the intersection of machine learning, differentiable programming, and tomographic
+                reconstruction, specifically the question of how physical models of X-ray imaging can be embedded
+                directly into learnable pipelines. She co-develops <strong>DiffCT-MLX</strong>, an open-source
+                dual-backend toolkit for differentiable CT that supports both CUDA/PyTorch and Metal/MLX. She is
+                particularly drawn to problems where a well-understood physical forward model and a data-driven
+                method have to be reconciled rather than played off against each other.
+            </p>
+            <p>
+                In <strong>UnLost</strong> she works on the reconstruction of the carbonised scrolls and
+                palimpsests, and on building an end-to-end pipeline that runs from segmentation to ink detection.
             </p>
             <p class="more-height pt-2">
-                Email: {{.email_anon}} <br>
-                <a href="{{.scholar}}" class="" title="Google Scholar">Google Scholar</a>
-                <a href="{{.linkedin}}" class="" title="LinkedIn">LinkedIn</a>
+                Email: {{.email_anon}}
+            </p>
+            <p class="social-icons">
+                <a href="{{.scholar}}" target="_blank" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="{{.linkedin}}" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="{{.github}}" target="_blank" title="GitHub" aria-label="GitHub"><i class="bi bi-github"></i></a>
             </p>
             {{ end }}
         </div>
