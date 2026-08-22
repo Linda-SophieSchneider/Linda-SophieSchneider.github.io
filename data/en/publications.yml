@@ -7,6 +7,7 @@ publications:
       published: "MICCAI 2026"
       has_info: true
       abstract: "Investigates how including unlabeled data and meta-ablation studies improves the validation of simulation-based evaluation methods for medical imaging models."
+      pdf: "/papers/validation-simulation-based-evaluation-miccai2026.pdf"
 
     - title: "TCCT: Trajectory-Conditioned Non-Circular Orbits CBCT Reconstruction with Fourier Neural Operator"
       year: 2026
@@ -14,6 +15,7 @@ publications:
       published: "MICCAI 2026"
       has_info: true
       abstract: "Proposes a Fourier neural operator conditioned on the acquisition trajectory to reconstruct cone-beam CT images from non-circular source orbits."
+      pdf: "/papers/tcct-miccai2026.pdf"
 
     - title: "An Analysis of Lightweight Models for Document Image Machine Translation"
       year: 2026
@@ -21,6 +23,7 @@ publications:
       published: "ICDAR 2026"
       has_info: true
       abstract: "Compares lightweight model architectures for translating text embedded in document images, evaluating the trade-off between model size and translation quality."
+      pdf: "/papers/lightweight-models-document-image-translation-icdar2026.pdf"
 
     - title: "Incremental Learning for Classifying Document Types Based on Content and Layout"
       year: 2026
@@ -28,6 +31,7 @@ publications:
       published: "ICDAR 2026 Workshop"
       has_info: true
       abstract: "Studies incremental learning strategies for classifying document types from a combination of textual content and layout features as new document classes are introduced over time."
+      pdf: "/papers/incremental-learning-document-types-icdar2026.pdf"
 
     - title: "CircleID: ICDAR 2026 Competition on Writer Identification and Pen Classification from Hand-Drawn Circles"
       year: 2026
@@ -136,6 +140,7 @@ publications:
       published: "IEEE Transactions on Nuclear Science"
       has_info: true
       abstract: "Proposes standardizing non-circular cone-beam CT source trajectories so that a single differentiable shift-variant FBP model, trained once, generalizes across trajectory types instead of requiring per-trajectory retraining."
+      pdf: "/papers/sv-fbp-trajectory-standardization-tns.pdf"
 
     - title: "LSTT: Latent Spatio-Temporal Transformer for Non-rigid Motion Compensation in CBCT"
       year: 2025

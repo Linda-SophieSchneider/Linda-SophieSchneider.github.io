@@ -4,10 +4,25 @@ teaching:
 lectures:
   title: Teaching Activities
   items :
+    - subject : Introduction to Machine Learning
+      kind: Lecture
+      semester : Summer term 26
+      position : Teaching assistant
+
+    - subject : Advanced Deep Learning
+      kind: Lecture
+      semester : Winter term 26/27
+      position : Teaching assistant
+
+    - subject : Herculaneum Papyri
+      kind: Block Seminar
+      semester : Winter term 25/26
+      position : Seminar lead
+
     - subject : Pattern Recognition
       kind: Lecture
       semester : Winter term 25/26
-      position : Teaching assistant
+      position : Teaching assistant & lecturer (6 lectures)
 
     - subject : Introduction to Machine Learning
       kind: Lecture

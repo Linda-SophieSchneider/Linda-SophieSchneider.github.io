@@ -24,6 +24,11 @@ name = "Talks"
 url = "/talks"
 weight = 3
 
+[[Languages.en.menu.main]]
+name = "Lectures"
+url = "/lectures"
+weight = 4
+
 
 [[Languages.en.menu.main]]
 name = "Imprint"
@@ -32,8 +37,8 @@ weight = 11
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/PGLogoHighContrast.svg"
-portrait = "images/portrait.jpg"
+logo = "images/UnLostCTLogo.svg"
+portrait = "images/short_bio_image_linda.png"
 author = "Linda-Sophie Schneider"
 title = "Linda-Sophie Schneider"
 ustid = ""

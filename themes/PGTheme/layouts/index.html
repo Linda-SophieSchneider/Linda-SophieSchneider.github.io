@@ -1,6 +1,7 @@
 {{ define "content" }}
 
-<div class="container pt-2">
+<div class="container pt-4">
+  <div class="bio-card mx-auto" style="max-width: 900px;">
     <div class="row">
         <div class="col-sm-4 col-lg-3 pt-3">
             {{- partial "responsive_image.html" (dict
@@ -17,9 +18,17 @@
             {{ with $data.contact.contact }}
             <h1>{{.first_name}} {{.last_name}} </h1>
             <p>
-                PhD student <br>
-                AI-based Solutions for flexible CT Systems <br>
-                FAU Erlangen-Nürnberg <br>
+                Researcher &middot; <a href="https://lme.tf.fau.de" target="_blank">Pattern Recognition Lab</a>, <a href="https://www.fau.eu" target="_blank">FAU Erlangen-Nürnberg</a> <br>
+                <span class="tag-pill">UnLost — ERC Synergy Grant</span>
+            </p>
+            <p class="pt-2">
+                I work on computed tomography (CT) reconstruction and CT trajectory optimization at the
+                Pattern Recognition Lab, under the supervision of <a href="https://lme.tf.fau.de/person/maier/" target="_blank">Andreas Maier</a>.
+                Since the beginning of 2026 I have also been part of <strong>UnLost</strong>, an ERC Synergy Grant
+                project dedicated to making the Herculaneum papyri legible again, where I focus on differentiable
+                pipelines that connect CT reconstruction directly with ink detection.
+            </p>
+            <p class="more-height pt-2">
                 Email: {{.email_anon}} <br>
                 <a href="{{.scholar}}" class="" title="Google Scholar">Google Scholar</a>
                 <a href="{{.linkedin}}" class="" title="LinkedIn">LinkedIn</a>
@@ -27,50 +36,7 @@
             {{ end }}
         </div>
     </div>
+  </div>
+</div>
 
-    <div class="row pt-4">
-
-        <div class="col">
-            <p>
-                I am a PhD student at the <a href="https://lme.tf.fau.de" target="_blank">Pattern Recognition Lab</a>  at <a href="https://www.tuwien.at" target="_blank">FAU Erlangen-Nürnberg</a> in
-                Germany, under the supervision of <a href="https://lme.tf.fau.de/person/maier/" target="_blank">Andreas Maier</a>.
-            </p>
-
-            <h2 class="pt-4">Research</h2>
-            <p>
-                I am focused on solving challenges in industrial computed tomography (CT), particularly in optimizing CT trajectories and improving reconstruction.
-                My research explores how AI tools can enhance image quality and reduce scanning times. Collaborating with the <a href="https://www.iis.fraunhofer.de/de/ff/zfp.html
-                " target="_blank">Fraunhofer EZRT</a> in Fürth, 
-                I work primarily on robotic CT systems and industry CT machines, aiming to combine practical solutions with innovative technology.
-            </p> 
-
-            <h2 class="pt-4">Education</h2>
-            <p>
-                Currently, I am pursuing my PhD under the supervision of Andreas Maier since 2021 at <a href="https://www.fau.eu" target="_blank">Friedrich-Alexander-University
-                    Erlangen-Nürnberg</a>, Germany.
-                Prior to my PhD, I earned a Master of Science (M.Sc.) in Mathematics from <a
-                    href="https://www.fau.eu" target="_blank">Friedrich-Alexander-University Erlangen-Nürnberg</a>
-                between 2018 and 2021. Earlier, I did my Bachelor of Science (B.Sc.) in Mathematics and Economics at <a
-                href="https://www.fau.eu" target="_blank">Friedrich-Alexander-University Erlangen-Nürnberg</a> from 2014 to 2018.
-            </p>
-
-            <h2 class="pt-4">Recent <a href="/publications">Publications</a></h2>
-            {{ with $data.publications.publications }}
-            {{ range first 4 .items }}
-            <p class="pb-2">
-                {{ if .pdf }}
-                <a href="{{ .pdf }}" target="_blank">{{ .title }}</a>
-                {{ else }}
-                {{ .title }}
-                {{ end }}<br>
-                {{ .authors }} <br>
-                <b>{{ .published }} {{.year }}</b>
-
-            </p>
-
-            {{ end }}
-            {{ end }}
-
-        </div>
-
-        {{ end }}
+{{ end }}
