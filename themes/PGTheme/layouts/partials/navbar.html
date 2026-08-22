@@ -17,12 +17,13 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                {{ $currentPage := . }}
+                {{ $currentURL := strings.TrimSuffix "/" $.RelPermalink }}
                 {{ range .Site.Menus.main.ByWeight }}
 
                 {{ if lt .Weight 10 }}
+                {{ $entryURL := strings.TrimSuffix "/" .URL }}
                 <li class="nav-item ">
-                    <a class='nav-link {{ if in $currentPage .URL  }} active {{ end }}' href="{{ .URL }}"
+                    <a class='nav-link {{ if eq $entryURL $currentURL }} active {{ end }}' href="{{ .URL }}"
                         data-target='{{ replace .URL "/" "" }}' style="font-weight: 200;">
                         {{ .Name }}
                     </a>

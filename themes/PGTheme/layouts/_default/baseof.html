@@ -80,11 +80,12 @@
   <footer class="mt-auto" id="footer">
     <nav class="navbar navbar-expand-sm navbar-light">
       <ul class="navbar-nav mx-auto">
-        {{ $currentPage := . }}
+        {{ $currentURL := strings.TrimSuffix "/" .RelPermalink }}
         {{ range .Site.Menus.main.ByWeight }}
         {{ if ge .Weight 10 }}
+        {{ $entryURL := strings.TrimSuffix "/" .URL }}
         <li class="nav-item ">
-          <a class='nav-link {{ if in $currentPage .URL }} active {{ end }}' style="font-weight: 200;"
+          <a class='nav-link {{ if eq $entryURL $currentURL }} active {{ end }}' style="font-weight: 200;"
             href="{{ .URL | absURL }}">
             {{ .Name }}
           </a>
