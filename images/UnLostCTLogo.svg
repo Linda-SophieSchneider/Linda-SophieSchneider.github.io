@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Logo: a CT scan orbit (teal, dashed arc with source marker) around a
+     Herculaneum-style rolled papyrus scroll (terracotta) -->
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <!-- CT trajectory orbit -->
+  <path
+     d="M 50 6 A 44 44 0 1 1 15.2 82.8"
+     fill="none"
+     stroke="#00796B"
+     stroke-width="4.5"
+     stroke-linecap="round"
+     stroke-dasharray="1 8" />
+  <circle cx="50" cy="6" r="5" fill="#00796B" />
+
+  <!-- Papyrus scroll -->
+  <rect x="27" y="43" width="46" height="14" rx="2" fill="#FBF3E7" stroke="#A6743C" stroke-width="3.5" />
+  <circle cx="27" cy="50" r="9.5" fill="#FBF3E7" stroke="#A6743C" stroke-width="4" />
+  <circle cx="73" cy="50" r="9.5" fill="#FBF3E7" stroke="#A6743C" stroke-width="4" />
+  <line x1="35" y1="47" x2="65" y2="47" stroke="#A6743C" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="35" y1="53" x2="60" y2="53" stroke="#A6743C" stroke-width="2.2" stroke-linecap="round" />
+</svg>

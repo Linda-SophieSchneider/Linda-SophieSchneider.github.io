@@ -1,41 +1,108 @@
+:root {
+  --accent-teal: #00796B;
+  --accent-teal-dark: #004D40;
+  --accent-terracotta: #A6743C;
+  --paper-bg: #FBF8F3;
+  --card-bg: #FFFFFF;
+}
+
 .more-height {
   /* For the contact info*/
   line-height: 2;
 }
 
-p {
-  font-weight: 200;
+body {
+  font-weight: 300;
   /* 100 is the thinnest, 400 is normal, and 900 is the boldest */
+  background-color: var(--paper-bg);
+  color: #2b2b28;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", "Montserrat", serif;
 }
 
 h1 {
-  font-weight: 200;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 h2 {
-  color: #00796B;
-  font-weight: 200;
-  /* 100 is the thinnest, 400 is normal, and 900 is the boldest */
+  color: var(--accent-teal);
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.2em;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 2.5em;
+  height: 3px;
+  margin-top: 0.25em;
+  background: var(--accent-terracotta);
+  border-radius: 2px;
 }
 
 h3 {
-  color: #00796B;
-  font-weight: 200;
+  color: var(--accent-teal);
+  font-weight: 500;
   font-size: 1.4em;
   /* This makes the size slightly smaller than normal text size */
 }
 
-body {
-  font-weight: 200;
-  /* 100 is the thinnest, 400 is normal, and 900 is the boldest */
-}
-
 a {
-  color: #00796B;
+  color: var(--accent-teal);
   /* Teal color */
   text-decoration: underline;
+  text-decoration-color: rgba(0, 121, 107, 0.35);
+  text-underline-offset: 2px;
 }
 
 a:hover {
-  color: #004D40;
+  color: var(--accent-terracotta);
+  text-decoration-color: rgba(166, 116, 60, 0.5);
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(166, 116, 60, 0.2);
+}
+
+/* Bio / hero card on the front page */
+.bio-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(166, 116, 60, 0.18);
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: 0 6px 24px rgba(43, 43, 40, 0.06);
+}
+
+.bio-card img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(43, 43, 40, 0.12);
+}
+
+/* Small tag/pill used to highlight current projects e.g. "UnLost" */
+.tag-pill {
+  display: inline-block;
+  background: rgba(166, 116, 60, 0.12);
+  color: var(--accent-terracotta);
+  border: 1px solid rgba(166, 116, 60, 0.3);
+  border-radius: 999px;
+  padding: 0.15em 0.75em;
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(166, 116, 60, 0.2);
+  background-color: var(--paper-bg);
 }
