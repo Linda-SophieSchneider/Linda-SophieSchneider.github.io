@@ -1,16 +1,15 @@
 lectures:
   title: Lecture Materials
   intro: "Slides and scripts from courses I teach. Materials are added here over time."
-  courses: []
-  # Example of how to add a course once materials are ready — copy the block
-  # below, fill it in, and drop the referenced files under
-  # static/lectures/<course-folder>/:
-  #
-  # courses:
-  #   - name: "Pattern Recognition"
-  #     semester: "Winter term 25/26"
-  #     materials:
-  #       - title: "Lecture 1 — Introduction"
-  #         file: "/lectures/pattern-recognition/01-introduction.pdf"
-  #       - title: "Lecture 2 — Optimization"
-  #         file: "/lectures/pattern-recognition/02-optimization.pdf"
+  courses:
+    - name: "Advanced Deep Learning"
+      semester: "Winter term 25/26"
+      materials:
+        - title: "Federated Learning and Differential Privacy"
+          file: "/lectures/advanced-deep-learning/10-federated-learning-and-differential-privacy.pdf"
+
+    - name: "Introduction to Machine Learning"
+      semester: "Summer term 26"
+      materials:
+        - title: "Interpretability"
+          file: "/lectures/introduction-to-machine-learning/23-interpretability.pdf"
