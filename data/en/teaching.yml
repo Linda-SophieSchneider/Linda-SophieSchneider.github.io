@@ -76,8 +76,12 @@ students:
       description: "Combined a differentiable ASD-POCS solver with a learned CT operator for compressed-sensing-style algebraic reconstruction."
     - date: 2026
       degree: Master Thesis
-      topic: "Agentic Workflow Automatisation"
+      topic: "Design and Evaluation of an LLM-Based Agentic Workflow for the (Semi-)Automation of Public Tendering Processes in Germany"
       description: "Designed and evaluated an LLM-based agentic workflow that automates large parts of German public-tender processing, from search and document analysis to cost calculation and bid submission."
+    - date: 2026
+      degree: Project
+      topic: "Design and Evaluation of an LLM-Based Browser-Automation Workflow for German Public Tendering"
+      description: "Builds a browser-automation layer for fragmented German e-procurement portals, where a language model discovers each portal's workflow once and a model-free executor replays it deterministically, reserving the binding bid submission for a human trigger; reaches 77-89% goal-state correctness on preparation tasks validated live on two real portals."
     - date: 2026
       degree: Bachelor Thesis
       topic: "Deep Learning-Based Analysis of Thermographic Mold Images for Quality Prediction in Aluminum Die Casting"
