@@ -46,6 +46,8 @@ logo = "images/UnLostCTLogo.svg"
 portrait = "images/short_bio_image_linda.png"
 author = "Linda-Sophie Schneider"
 title = "Linda-Sophie Schneider"
+description = "Linda-Sophie Schneider researches medical imaging, CT reconstruction, and machine learning for computed tomography and image analysis."
+keywords = ["Linda-Sophie Schneider", "CT reconstruction", "computed tomography", "medical imaging", "machine learning", "Pattern Recognition Lab", "FAU Erlangen-Nürnberg"]
 ustid = ""
 
 
