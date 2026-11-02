@@ -61,23 +61,32 @@
   <div class="mx-auto pt-4" style="max-width: 900px;">
     {{ $data := index site.Data site.Language.Lang }}
     {{ with $data.publications.publications }}
-    {{/* Pool = every publication from the current or the previous calendar year
-         (the data only stores a year, so this is the closest match to "the last year").
-         Three of them are picked at random. Hugo picks at build time (fallback without
-         JavaScript); the script below re-picks on every page load. */}}
-    {{ $minYear := sub now.Year 1 }}
+    {{/* Three random publications of the "recent" window. The data only stores a year, so:
+         January - September: this year and last year
+         October - December:  this year only
+         (falls back to both years if that leaves fewer than 3 papers).
+         Hugo picks at build time (fallback without JavaScript); the script below applies
+         the same rule with the visitor's date and re-picks on every page load. */}}
+    {{ $today := now }}
+    {{ $windowYear := $today.Year }}
+    {{ if le (int ($today.Format "1")) 9 }}{{ $windowYear = sub $today.Year 1 }}{{ end }}
     {{ $pool := slice }}
     {{ range .items }}
-    {{ if ge (int .year) $minYear }}
+    {{ if ge (int .year) (sub $today.Year 1) }}
     {{ $pool = $pool | append . }}
     {{ end }}
     {{ end }}
     {{ if gt (len $pool) 0 }}
-    {{ $picked := first 3 (shuffle (seq (len $pool))) }}
+    {{ $eligible := slice }}
+    {{ range $i, $p := $pool }}
+    {{ if ge (int $p.year) $windowYear }}{{ $eligible = $eligible | append (add $i 1) }}{{ end }}
+    {{ end }}
+    {{ if lt (len $eligible) 3 }}{{ $eligible = seq (len $pool) }}{{ end }}
+    {{ $picked := first 3 (shuffle $eligible) }}
     <h2>Recent Publications</h2>
     <div class="pub-list" id="recent-pubs">
         {{ range $i, $p := $pool }}
-        <div class="pub-row"{{ if not (in $picked (add $i 1)) }} style="display:none"{{ end }}>
+        <div class="pub-row" data-year="{{ $p.year }}"{{ if not (in $picked (add $i 1)) }} style="display:none"{{ end }}>
             <div class="pub-year">{{ $p.year }}</div>
             <div class="pub-content">
                 {{ if $p.pdf }}
@@ -96,7 +105,13 @@
         var list = document.getElementById('recent-pubs');
         if (!list) return;
         var rows = Array.prototype.slice.call(list.children);
-        var idx = rows.map(function (_, i) { return i; });
+        var now = new Date();
+        /* Jan-Sep: this and last year; Oct-Dec: this year only */
+        var windowYear = now.getFullYear() - (now.getMonth() <= 8 ? 1 : 0);
+        var idx = rows.map(function (_, i) { return i; }).filter(function (i) {
+            return parseInt(rows[i].getAttribute('data-year'), 10) >= windowYear;
+        });
+        if (idx.length < 3) idx = rows.map(function (_, i) { return i; });
         for (var i = idx.length - 1; i > 0; i--) { /* Fisher-Yates shuffle */
             var j = Math.floor(Math.random() * (i + 1));
             var t = idx[i]; idx[i] = idx[j]; idx[j] = t;
